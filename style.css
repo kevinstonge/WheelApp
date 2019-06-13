@@ -1,0 +1,130 @@
+:root {
+    --bodyMargin: 0.5em;
+    --bgColor1: #232323;
+    --bgColor2: #353535;
+    --fgColor1: #aaa;
+    --fgColor2: #ccc;
+}
+
+body { 
+    margin: var(--bodyMargin); 
+    background-color: var(--bgColor1);
+    color: var(--fgColor1);
+}
+
+#wheelAppContainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - var(--bodyMargin) * 2);
+    height: calc(100vh - var(--bodyMargin) * 2);
+}
+
+#wheelGameContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#wheelInterfaceContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+#wheelControlButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+button {
+    font-size: 1.4em;
+    padding: 0.3em;
+    border-radius: 10%;
+    width: max-content;
+    color: var(--fgColor2);
+}
+
+#wheelSpinButton {
+    background-color: hsl(270,50%,40%);
+    border: 2px solid hsl(140,60%,60%);
+}
+
+#wheelSpinButton:hover {
+    background-color: hsl(270,50%,60%);
+    color: black;
+}
+
+#wheelStopButton {
+    background-color: hsl(0,50%,40%);
+    border: 2px solid var(--fgColor2);
+}
+
+#wheelStopButton:hover {
+    background-color: hsl(0,80%,60%);
+    color: black;
+}
+
+#wheelStopButton:disabled {
+    background-color: #777;
+    border: 2px solid #333;
+    color: var(--fgColor1);
+}
+
+#wheelSpinButton:disabled {
+    background-color: #777;
+    border: 2px solid #333;
+    color: var(--fgColor1);
+}
+
+
+textarea { 
+    width: 10em;
+    height: 100%;
+    padding: 0.5em;
+    background-color: var(--bgColor1);
+    color: var(--fgColor1);
+    font-size: 1.6em;
+}
+
+textarea:disabled {
+    color: var(--bgColor2);
+    border: 1px dashed var(--bgColor2);
+}
+
+#wheelGameWinner {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    background-color: hsla(230,50%,50%,0.8);
+}
+
+#wheelGameWinner h2 {
+    font-size: 6em;
+    margin: 0; 
+}
+
+#wheelGameWinner h1 {
+    font-size: 7em;
+    margin: 0;
+    color: hsl(140,100%,60%);
+}
+
+#wheelGamePlayAgain {
+    margin: 0.5em auto;
+    background-color: hsl(270,50%,40%);
+    border: 2px solid hsl(140,60%,60%);
+}
+
+#wheelGamePlayAgain:hover {
+    background-color: hsl(270,50%,60%);
+}

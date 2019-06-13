@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Wheel</title>
+</head>
+<body>
+    <div id="wheelAppContainer">
+
+        <div id="header">
+            <h1>Wheel</h1>
+        </div>
+
+        <div id="wheelGameContainer">
+            <div id="wheelCanvasContainer">
+                <canvas id="wheelCanvas"></canvas>
+            </div>
+            <div id="wheelInterfaceContainer">
+                <div id="wheelControlButtons"><button id="wheelSpinButton">Spin!</button><button id="wheelStopButton" disabled>stop</button></div>
+                <textarea id="wheelTextarea"></textarea>
+            </div>
+        </div>
+
+        <div id="wheelGameWinner">
+            <h2>Congratulations</h2>
+            <h1 id="wheelGameWinnerName"></h1>
+            <h2>!!!You win!!!</h2>
+            <button id="wheelGamePlayAgain">play again</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
